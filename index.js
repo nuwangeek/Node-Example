@@ -1,8 +1,5 @@
 //java script object
-var rect = {
-    perimiter:(x,y) => (2*(x+y)),
-    area:(x,y) => (x*y)
-};
+var rect = require('./rectangle');//this is how rectangle node module be called
 
 function solveRect(l,b){
     console.log("solving for rectangle with l = "+l + "and b =" + b);
@@ -12,7 +9,7 @@ function solveRect(l,b){
 
     }else{
         console.log("Area of rectangle = "+rect.area(l,b));
-        console.log("perimeter of rectangle = " +rect.perimiter(l,b));
+        console.log("perimeter of rectangle = " +rect.perimeter(l,b));
     }
 }
 
